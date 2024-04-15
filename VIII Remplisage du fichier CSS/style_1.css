@@ -1,0 +1,23 @@
+head { background-color: black;}
+
+body { background-color: gray;}
+
+header {
+    background-color: black;
+    color: red;
+}
+
+nav {
+    background-color: black;
+    color: blue;
+}
+
+body {
+    background-color: black;
+    color: green;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+}
