@@ -1,0 +1,6 @@
+body { background-color: #AA0000; }
+header, nav { background-color: #FFFFFF; }
+main, footer { background-color: yellow; }
+* { color: blue; }
+
+main mark { background-color: red; }

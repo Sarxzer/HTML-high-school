@@ -1,0 +1,16 @@
+body { background-color: #AA0000; }
+header, nav { background-color: #FFFFFF; }
+main, footer { background-color: yellow; }
+* { color: blue; }
+
+main mark { background-color: red; }
+
+ul>li:first-child, ul>li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+ol>li:first-child, ol>li:last-child {
+    color: green;
+    font-weight: bold;
+}

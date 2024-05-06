@@ -1,0 +1,9 @@
+.Paragraphe_type1 {
+    font-style: italic;
+    background-color: grey;
+    color: white;
+}
+.Paragraphe_type2 {
+    text-decoration: line-through;
+    background-color: silver;
+}
