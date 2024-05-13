@@ -1,0 +1,21 @@
+nav {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: #4a829f;
+}
+
+.essai_bouton6 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #91a0e1;
+    padding: 20px;
+    border-radius: 12px;
+    transition: background-color 0.5s;
+}
+
+.essai_bouton6:hover {
+    background-color: #fff168;
+}
