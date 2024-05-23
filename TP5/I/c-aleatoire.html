@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Une version de la table de couleurs avec des couleurs aléatoires en JavaScript</h1>
+    <div id="color-table">
+        <table>
+            <tr>
+                <td>Hexa</td>
+                <td>Int. R</td>
+                <td>Int. G</td>
+                <td>Int. B</td>
+                <td>Color</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script>
+        table = document.querySelector("#color-table table");
+
+        function randomColor() {
+            return Math.floor(Math.random() * 256);
+        }
+
+        for (let i = 0; i < 10; i++) {
+            let tr = document.createElement("tr");
+            let hexa = document.createElement("td");
+            let r = document.createElement("td");
+            let g = document.createElement("td");
+            let b = document.createElement("td");
+            let color = document.createElement("td");
+
+            let rValue = randomColor();
+            let gValue = randomColor();
+            let bValue = randomColor();
+
+            hexa.textContent = "#" + rValue.toString(16).padStart(2, "0") + gValue.toString(16).padStart(2, "0") + bValue.toString(16).padStart(2, "0");
+            r.textContent = rValue;
+            g.textContent = gValue;
+            b.textContent = bValue;
+            color.style.backgroundColor = `rgb(${rValue}, ${gValue}, ${bValue})`;
+
+            tr.appendChild(hexa);
+            tr.appendChild(r);
+            tr.appendChild(g);
+            tr.appendChild(b);
+            tr.appendChild(color);
+
+            table.appendChild(tr);
+        }
+    </script>
+</body>
+</html>
