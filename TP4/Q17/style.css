@@ -1,0 +1,8 @@
+.img_a_gauche {
+    float: left;
+}
+
+.img_a_droite {
+    float: right;
+    margin-right: 40%;
+}
